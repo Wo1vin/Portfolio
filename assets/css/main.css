@@ -1295,7 +1295,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 740px) {
 
 			.row {
 				display: flex;
@@ -2643,7 +2643,7 @@ input, select, textarea {
 				width: 100%;
 			}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 740px) {
 
 			.image.fit {
 				margin: 2rem 0;
@@ -2985,7 +2985,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 740px) {
 
 			header.major {
 				margin: 0 0 2rem 0;
@@ -3463,7 +3463,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 740px) {
 
 			#intro {
 				padding: 3rem 2rem 1rem 2rem ;
@@ -3588,7 +3588,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 740px) {
 
 			#header {
 				padding-bottom: 3rem;
@@ -3786,14 +3786,40 @@ input, select, textarea {
 				padding: 0 1.2em;
 			}
 			#main > .post .trade{
-				width: 60%;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
 				margin: 0;
-				float: left;
+			}
+			#main > .post .tradeCard{
+				width: -moz-fit-content;
+				width: fit-content;;
+			}
+			#main > .post .tradeCard + .tradeCard{
+				padding-left: 2em;
 			}
 			#main > .post .skills{
-				width: 35%;
+				/* margin: 0; */
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
 				margin: 0;
-				float: right;
+			}
+			#main > .post .skillsCard{
+				width: -moz-fit-content;
+  				width: fit-content;
+				margin: 0;
+			}
+			#main > .post .skillsCard:first-child ul{
+				padding-right: 2em;
+			}
+			 .capabilities h4 {
+				/* text-align:center; */
+				margin: 1em 0;
+			}
+			.capabilities h3.titleS{
+				margin: 2em 0;
+				text-align:center;
 			}
 			#main > .post header.major > .date {
 				margin-top: -2rem;
@@ -3823,7 +3849,7 @@ input, select, textarea {
 				}
 			}
 
-			@media screen and (max-width: 736px) {
+			@media screen and (max-width: 740px) {
 
 				#main > .post {
 					padding: 4rem 2rem 2rem 2rem ;
@@ -3923,32 +3949,38 @@ input, select, textarea {
 				#main > .post {
 					padding: 4rem 6rem;
 				}
-				#main > .post .trade, .trade p{
+				#main > .post .trade{
 					/* text-align: center; */
 					width: 100%;
 					display: block;
-
+				}
+				#main > .post .tradeCard + .tradeCard{
+					padding-left: 0;
 				}
 				#main > .post .skills{
 					margin: 1em 0;
-					/* text-align: center; */
 					width: 100%;
-					display: block;
+					display: flex;
+					flex-direction: row;
+					justify-content: space-around;
+					flex-wrap: wrap
+				}
+				#main > .post .skillsCard{
+					margin: 1em;
+					width: -moz-fit-content;
+  					width: fit-content;
+					display: inline-block;
 				}
 				#main > .post .capabilities{
 					padding: 0 5em;
 				}
-				.skills1, .skills2{
-					float: left;
-					width: 50%;
-				}
 			}
 			@media screen and (max-width: 850px) {
 				#main > .post .capabilities{
-					padding: 0 3em;
+					padding: 0 2em;
 				}
 			}
-			@media screen and (max-width: 736px) {
+			@media screen and (max-width: 740px) {
 				#main > .post {
 					padding: 4rem 4rem;
 				}
@@ -3987,6 +4019,11 @@ input, select, textarea {
 				padding: 2rem 2rem 0.1rem 2rem ;
 			}
 
+		}
+		@media screen and (max-width: 680px) {
+			#main > .post {
+				padding: 4rem 1rem;
+			}
 		}
 		@media screen and (max-width: 630px) {
 			.skills1, .skills2{
@@ -4403,7 +4440,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 740px) {
 
 			#footer > section {
 				margin: -2rem auto 0 auto;
@@ -4605,7 +4642,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 740px) {
 
 			#navPanelToggle {
 				font-size: 0.8rem;
@@ -4709,7 +4746,7 @@ input, select, textarea {
 				color: #212931;
 			}
 
-			@media screen and (max-width: 736px) {
+			@media screen and (max-width: 740px) {
 
 				#navPanel .close {
 					height: 4rem;
@@ -4726,7 +4763,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 740px) {
 
 			#navPanel {
 				padding: 2.5rem 1.75rem;
@@ -4758,6 +4795,10 @@ input, select, textarea {
 	}
 	.services p{
 		margin-bottom: 1em;
+	}
+	.services .capabilities p{
+		margin-bottom: 1em;
+		text-align: center;
 	}
 	.services ul{
 		margin-bottom: 1em;
