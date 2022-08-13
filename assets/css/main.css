@@ -3960,16 +3960,21 @@ input, select, textarea {
 				#main > .post .skills{
 					margin: 1em 0;
 					width: 100%;
-					display: flex;
+					display:block;
+					/* display: flex;
 					flex-direction: row;
 					justify-content: space-around;
-					flex-wrap: wrap
+					flex-wrap: wrap */
 				}
 				#main > .post .skillsCard{
-					margin: 1em;
-					width: -moz-fit-content;
-  					width: fit-content;
+					/* margin: 1em; */
+					/* width: -moz-fit-content;
+					width: fit-content; */
+					width: 50%;
 					display: inline-block;
+				}
+				#main > .post .skillsCard.leftS{
+					float: left;
 				}
 				#main > .post .capabilities{
 					padding: 0 5em;
@@ -4036,7 +4041,16 @@ input, select, textarea {
 			#main {
 				width: 100%;
 			}
-
+			#main > .post .skillsCard{
+				width: 55%;
+			}
+			#main > .post .skillsCard:first-child{
+				width: 45%;
+			}
+			@media screen and (max-width: 420px) {
+				#main > .post .skillsCard{
+					width: inherit;
+				}
 		}
 
 /* Footer */
