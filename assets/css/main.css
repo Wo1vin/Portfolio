@@ -4023,7 +4023,6 @@ input, select, textarea {
 			#main > * {
 				padding: 2rem 2rem 0.1rem 2rem ;
 			}
-
 		}
 		@media screen and (max-width: 680px) {
 			#main > .post {
@@ -4036,7 +4035,7 @@ input, select, textarea {
 				width: 100%;
 			}
 		}
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 490px) {
 
 			#main {
 				width: 100%;
@@ -4047,10 +4046,11 @@ input, select, textarea {
 			#main > .post .skillsCard:first-child{
 				width: 45%;
 			}
-			@media screen and (max-width: 420px) {
-				#main > .post .skillsCard{
-					width: inherit;
-				}
+		}
+		@media screen and (max-width: 420px) {
+			#main > .post .skills .skillsCard{
+				width: 100%;
+			}
 		}
 
 /* Footer */
