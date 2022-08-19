@@ -4023,14 +4023,26 @@ input, select, textarea {
 					margin-left: auto;
 					margin-right: auto;
 				}
-
+				#main > .posts > article a {
+					font-size: 1em;
+					font-family: "Source Sans Pro", Helvetica, sans-serif;
+					border: none;
+					text-transform: uppercase;
+					display: flex;
+    				justify-content: center;
+					align-items: center;
+				}
+				#main > .posts > article i {
+					font-size: 2em;
+					margin-right: .2em;
+				}
 			#main > * {
 				padding: 2rem 2rem 0.1rem 2rem ;
 			}
 		}
 		@media screen and (max-width: 680px) {
 			#main > .post {
-				padding: 4rem 1rem;
+				padding: 4rem 2rem;
 			}
 		}
 		@media screen and (max-width: 630px) {
