@@ -4832,3 +4832,6 @@ input, select, textarea {
 	.services ul{
 		margin-bottom: 1em;
 	}
+	.doubleH{
+		margin-bottom: 0;
+	}
