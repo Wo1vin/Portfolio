@@ -2848,7 +2848,7 @@ input, select, textarea {
 
 	ul {
 		list-style: disc;
-		margin: 0 0 2rem 0;
+		/* margin: 0 0 2rem 0; */
 		padding-left: 1rem;
 	}
 
@@ -2871,9 +2871,9 @@ input, select, textarea {
 					padding-top: 0;
 				}
 
-	dl {
+	/* dl {
 		margin: 0 0 2rem 0;
-	}
+	} */
 
 		dl dt {
 			display: block;
@@ -3783,7 +3783,7 @@ input, select, textarea {
 		}
 
 		#main > .post {
-			padding: 4.5rem 8rem 1rem 8rem;
+			padding: 4rem 8rem 2rem 8rem;
 		}
 			#main > .post .sideProjects{
 				clear: both;
