@@ -2618,7 +2618,7 @@ input, select, textarea {
 		.image.fit {
 			display: block;
 			margin: 2.5rem 0;
-			width: 100%;
+			width: 80%;
 		}
 
 			.image.fit:first-child {
@@ -3915,7 +3915,7 @@ input, select, textarea {
 
 			#main > .posts > * {
 				padding: 4rem;
-				width: 50%;
+				width: 100%;
 			}
 
 			#main > .posts > article {
@@ -4842,7 +4842,17 @@ input, select, textarea {
 	.doubleH{
 		margin-bottom: 0;
 	}
-/* .liTitle{
-	text-decoration: none;
-	list-style: none;
+/* .mockup{
+	width: 100%;
+	height: 100%;
+	background: center no-repeat #fff url(/images/Laptop-Mockup.png);
 } */
+article{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+article p{
+	width: 80%;
+	text-align: center;
+}
