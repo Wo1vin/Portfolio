@@ -188,63 +188,9 @@
 									</p>
 								</article>
 							</section>
-							<article class="post featured contact">
-								<header class="major">
-									<h2>Contact</h2>
-								</header>
-							</article>
 					</div>
 
-				<!-- Footer -->
-				<footer id="footer">
-					<section>
-						<form method="post" action="form.php" enctype="multipart/form-data" id="contact-form" data-netlify="true">
-						<!--FUTURE ADDITION: add a custom "submission successful" page
-							linking back to portfolio/services/about/socials (card style)
-							add attribute: [ action="success.html" ]-->
-							<div class="fields">
-								<div class="field">
-									<label for="name">Name</label>
-									<input type="text" name="first" id="first" placeholder="First Name" />
-									<input type="text" name="last" id="last" placeholder="Last Name" />
-									<input type="tel" name="phone" id="phone" placeholder="Phone Number" />
-									<input type="email" name="email" style="cursor: pointer;" id="email" placeholder="Email" />
-									<input type="text" name="subject" id="subject" placeholder="Subject" />
-									<textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
-									<input type="submit" id="submit" value="Send Message" />								</div>
-								<!-- <div class="field">
-									<label for="email">Email</label>
-									<input type="email" name="email" id="email" required/>
-								</div>
-								<div class="field">
-									<label for="message">Message</label>
-									<textarea name="message" id="message" rows="3"required></textarea>
-								</div> -->
-							</div>
-							<!-- <ul class="actions">
-								<li><input type="submit" value="Send Message" /></li>
-							</ul> -->
-						</form>
-					</section>
-					<!-- <section class="split contact">
-						<section class="alt">
-							<h3>Location</h3>
-							<p><a href="https://goo.gl/maps/TLd3DzuZSxP5wBPH6" target="_blank">Lawrenceville, GA  United States</a></p>
-						</section>
-						<section>
-							<h3>Email</h3>
-							<p><a href="mailto:d.delmonte@yahoo.com?subject=Inquiry">wolvincraft@gmail.com</a></p>
-						</section>
-						<section>
-							<h3>Social</h3>
-							<ul class="icons alt">
-								<li><a href="https://www.linkedin.com/in/wo1vin/" target="_blank" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://twitter.com/wo1vin" target="_blank" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="https://github.com/Wo1vin" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-							</ul>
-						</section>
-					</section> -->
-				</footer>
+			
 				<!-- Nav -->
 				<nav id="nav" class="bottomNav">
 					<ul class="links">
@@ -276,45 +222,5 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
-    <script>
-        $(document).ready(function(){        
-        $(".submit").click(function (event){
-        
-        //get value of form fields
-        var first = $(".first").val();
-        var last = $(".last").val();
-        var phone = $(".phone").val();
-        var email = $(".email").val();
-        var subject = $(".subject").val();
-        var message = $(".message").val();
-        
-        //Function to email address validation
-        function validateEmail(email) {
-        var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-        return emailReg.test( email );
-        }
-        
-        //Check if email  format is correct
-        if( !validateEmail(email)) { 
-        alert("Enter a valid email address");
-        $("form").find("input[type=email]").css("border","1px solid orange");
-        
-        //Highlight invalid email form field
-        setTimeout(function() {
-        $("form").find("input[type=email]").css("border","1px solid #ced4da");
-        }, 1000);
-        return false;
-        }
-        
-        //check if fields are empty
-        if (first == '' || last == '' || phone == '' || email == '' || subject == '' || message == ''){
-        $('.success').fadeOut(200).hide();
-        $('.error').fadeOut(200).show();
-        }
-        
-        event.preventDefault();
-        });
-        });      
-        </script>
 	</body>
 </html>
