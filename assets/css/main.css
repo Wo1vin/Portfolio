@@ -2583,7 +2583,7 @@ input, select, textarea {
 
 /* Image */
 	.posts img{
-		border: 1px solid gray;
+		border: 2px solid #000;
 	}
 	.image {
 		border: 0;
