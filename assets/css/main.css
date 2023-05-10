@@ -3788,16 +3788,16 @@ input, select, textarea {
 			}
 			#main > .post .capabilities{
 				padding: 0 1.2em;
+				margin-top: 2em;
 			}
 			#main > .post .trade{
 				display: flex;
 				flex-direction: row;
-				justify-content: space-around;
+				justify-content: space-between;
 				margin: 0;
 			}
 			#main > .post .tradeCard{
-				width: -moz-fit-content;
-				width: fit-content;;
+				width: 33%;
 			}
 			#main > .post .tradeCard + .tradeCard{
 				padding-left: 2em;
@@ -3847,9 +3847,12 @@ input, select, textarea {
 			}
 
 			@media screen and (max-width: 1280px) {
-
+			
 				#main > .post {
-					padding: 4.5rem 8rem 4rem 8rem;
+					padding: 4.5rem 8rem 0 8rem;
+				}
+				#main > .post .sideProjects{
+					padding-top: 0;
 				}
 			}
 
@@ -3957,6 +3960,10 @@ input, select, textarea {
 					/* text-align: center; */
 					width: 100%;
 					display: block;
+				}
+				#main > .post .tradeCard{
+					width: -moz-fit-content;
+					width: fit-content;
 				}
 				#main > .post .tradeCard + .tradeCard{
 					padding-left: 0;
