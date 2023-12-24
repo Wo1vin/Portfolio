@@ -3795,13 +3795,13 @@ input, select, textarea {
 			}
 			#main > .post .trade{
 				display: flex;
-				flex-direction: row;
+				flex-direction: column;
 				justify-content: space-between;
 				margin: 0;
 			}
-			#main > .post .tradeCard{
+			/* #main > .post .tradeCard{
 				width: 33%;
-			}
+			} */
 			#main > .post .tradeCard + .tradeCard{
 				padding-left: 2em;
 			}
@@ -4861,4 +4861,12 @@ article p{
 }
 article h2 {
 	font-size: 1.75rem;
+}
+.tradeCard{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.tradeCard div{
+	padding: 0 1.5rem;
 }
