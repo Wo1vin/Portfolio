@@ -4835,9 +4835,9 @@ input, select, textarea {
 	.design header h2{
 		margin: 0;
 	}
-	.services p{
-		/* margin-bottom: 1em; */
-	}
+	/* .services p{
+		margin-bottom: 1em;
+	} */
 	.services .capabilities p{
 		margin-bottom: 1em;
 		text-align: center;
