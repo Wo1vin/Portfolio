@@ -266,7 +266,8 @@ input, select, textarea {
 	hr {
 		border: 0;
 		border-bottom: solid 2px;
-		margin: 3rem 0;
+		/* margin: 3rem 0; */
+		padding: 3rem 0;
 	}
 
 		hr.major {
@@ -2956,6 +2957,7 @@ input, select, textarea {
 			header.major > p {
 				margin-top: 0;
 				text-align: center;
+				width: 100%;
 			}
 
 			header.major > .date {
@@ -3729,7 +3731,7 @@ input, select, textarea {
 					background-color: #ffffff;
 				}
 				#nav.bottomNav ul.links li.active {
-					background-color: #f5f5f5;
+					background-color: #ffffff;
 				}
 					#nav ul.links li.active a {
 						color: #1e252d;
@@ -3767,6 +3769,7 @@ input, select, textarea {
 		width: calc(100% - 4rem);
 		max-width: 72rem;
 		z-index: 2;
+		
 	}
 
 		#main > * {
@@ -3852,7 +3855,7 @@ input, select, textarea {
 			@media screen and (max-width: 1280px) {
 			
 				#main > .post {
-					padding: 4.5rem 8rem 0 8rem;
+					padding: 4.5rem 8rem;
 				}
 				#main > .post .sideProjects{
 					padding-top: 0;
@@ -4833,7 +4836,7 @@ input, select, textarea {
 		margin: 0;
 	}
 	.services p{
-		margin-bottom: 1em;
+		/* margin-bottom: 1em; */
 	}
 	.services .capabilities p{
 		margin-bottom: 1em;
@@ -4855,7 +4858,7 @@ article{
     flex-direction: column;
     align-items: center;
 }
-article p{
+article p {
 	width: 80%;
 	text-align: center;
 }
@@ -4869,4 +4872,10 @@ article h2 {
 }
 .tradeCard div{
 	padding: 0 1.5rem;
+}
+#main.blog > .post > header h1{
+	margin: 1em 0 0 0;
+}
+.blog.post > p{
+	text-align: left;
 }
