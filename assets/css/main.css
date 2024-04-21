@@ -4879,3 +4879,6 @@ article h2 {
 .blog.post > p{
 	text-align: left;
 }
+.blog li{
+	text-align: left;
+}
