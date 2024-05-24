@@ -49,6 +49,7 @@
 						</section>
 
 						<!-- Posts -->
+						
 						<article class="blog post featured">
 							<header class="major">
 								<h2>Rendering Retina Graphics</h2>
@@ -88,6 +89,18 @@
 								To get around this, you should use CORS (Cross-origin resource sharing) to allow cross-origin access. CORS is a part of HTTP that lets servers specify any other hosts from which a browser should permit the loading of content.
 								</p>
 							<img src="./images/same-origin-policy.png" alt="table depicting different URLs, outcome, and reasons for each outcome." width="500px">
+							<span class="tags">#JavaScript</span>
+						</article>
+						<article class="blog post featured">
+							<header class="major">
+								<h2>What is the difference between <code>let</code>,<code>var</code>, and <code>const</code></h2>
+								<p>May 24th, 2024</p>
+							</header>
+							<p>Variables declared using the <code>var</code> keyword are scoped to the function in which they are created. If the variable is created outside of any function, it is scoped to the global object. 
+							<code>let</code> and <code>const</code> are block scoped, meaning they are only accessible within the nearest set of curly braces (function, if-else block, or for-loop).
+						<code>var</code> allows variables to be hoisted, meaning they can be referenced in code before they are declared. <code>let</code> and <code>const</code> will not allow this, instead throwing an error.
+								Re-declaring a variable with <code>var</code> will not throw an error, but <code>let</code> and <code>const</code> will.
+								<code>let</code> and <code>const</code> differ in that <code>let</code> allows reassigning the variable's value while <code>const</code> does not.</p>
 							<span class="tags">#JavaScript</span>
 						</article>
 						<article class="blog post featured">
