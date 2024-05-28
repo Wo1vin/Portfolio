@@ -182,6 +182,12 @@ I have found my light, my strength, my will.</br>
 							<p>A stack is a collection of elements that can only be accessed from the beginning or end of the collection. Picture a stack of pancakes, where you can either add a pancake (push), or take a pancake (pop). This method of accessing elements is called LIFO, and stands for Last In, First Out.</p>
 							<img src="./images/Lifo_stack.svg" alt="diagram visualizing the concept of LIFO, adding and removing elements from a stack.">
 							<p>A stack is an abstract and linear data type. Abstract data type (ADT) means you don't need to know how the data type keeps track of the elements. In these cases, the inner workings are <strong>abstracted</strong> from your knowledge. This is the same across different languages when it comes to ADT. Whether you use arrays in JavaScript or lists in C#, they both store elements and have methods that you can use to access them.</p>
+							<p>A stack can perform three fundamental operations:</p>
+							<dl>
+								<dt>PUSH:</dt><dd>The push action inserts a new element into the stack. First, verify if <code>TOP=MAX–1</code> to check if the stack is filled and no more insertions are possible. An <code>OVERFLOW</code> message is printed if an attempt is made to put a value into an existing stack.</dd>
+								<dt>POP:</dt> <dd>The pop operation is performed to remove the stack's topmost element. First verify if <code>TOP=NULL</code>to check if the stack is empty and no further deletions are permitted. An <code>UNDERFLOW</code> notice is produced if an attempt is made to erase a value from a stack that is already empty.</dd>
+								<dt>PEEK:</dt><dd>peek action returns the value of the stack's topmost element without removing it from the stack. It first checks if the stack is empty, i.e., if <code>TOP = NULL</code>, then an appropriate message is written. Otherwise, a value is returned.</dd>
+							</dl>
 							<span class="tags">#data structures</span>
 						</article>
 						<article class="blog post featured">
