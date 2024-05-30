@@ -51,6 +51,18 @@
 						<!-- Posts -->
 						<article class="blog post featured">
 							<header class="major">
+								<h2>Why use the arrow syntax for a method in a constructor?</h2>
+								<p>May 30th, 2024</p>
+							</header>
+							<p>The value of <strong>this</strong> gets set at the time of the function creation and can't change after that. 
+								Because of that, when the constructor is used to create a new object, <strong>this</strong> will always refer to that object.
+								In normal functions the value of this can be changed, but in arrow functions the context always stays the same. 
+								So you don't have to worry about the context changing, even if you use your arrow function in different parts of your application.
+								</p>
+							<span class="tags">#JavaScript</span>
+						</article>
+						<article class="blog post featured">
+							<header class="major">
 								<h2>What is the same-origin policy?</h2>
 								<p>May 26th, 2024</p>
 							</header>
