@@ -51,6 +51,22 @@
 						<!-- Posts -->
 						<article class="blog post featured">
 							<header class="major">
+								<h2>Rendering Retina Graphics</h2>
+								<p>May 31st, 2024</p>
+							</header>
+							<p>The word <strong>retina</strong> is just a marketing term to refer to high resolution screens with a pixel ratio bigger than 1. 
+								It means these displays are emulating a lower resolution screen in order to show elements with the same size. 
+								All mobile devices have retina-defacto displays.
+								By default, browsers render DOM elements according to the device resolution, except for images.
+								In order to have crisp, good-looking graphics that make the best of retina displays we need to use high resolution images whenever possible. 
+								However, using always the highest resolution images will have an impact on performance as more bytes will need to be sent over the wire.
+								To overcome this problem, we can use responsive images, as specified in HTML5. 
+								Making available different resolution files of the same image to the browser will let it decide which image is best. To do this, we can use the html attribute <code>srcset</code> and optionally <code>sizes</code>e for instance:</p>
+								<img src="./images/srcset.png" width="400px" alt="code example depicting use of srcset and sizes in an html document">
+							<span class="tags">#HTML</span>
+						</article>
+						<article class="blog post featured">
+							<header class="major">
 								<h2>Why use the arrow syntax for a method in a constructor?</h2>
 								<p>May 30th, 2024</p>
 							</header>
@@ -80,7 +96,7 @@
 								<p>April 26th, 2024</p>
 							</header>
 							<p>The event loop is a single-threaded loop that monitors the call stack of a project as the code is read and checks if there is any work to be done in the task queue. On each cycle of the event loop, it takes on whatever is on the top of the call stack, and whatever is next on the task queue gets pushed into the event loop in order to execute.</p>
-							<span class="tags">#node</span>
+							<span class="tags">#Node</span>
 						</article>
 						<article class="blog post featured">
 							<header class="major">
