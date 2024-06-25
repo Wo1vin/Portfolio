@@ -209,7 +209,9 @@ input, select, textarea {
 		font-size: 1.25rem;
 		margin: 0 0 1.5rem 0;
 	}
-
+	.blog article h3 {
+		margin: 1rem 0 0 0;
+	}
 	h4 {
 		font-size: 1rem;
 	}
@@ -4884,4 +4886,9 @@ article h2 {
 }
 .blog li{
 	text-align: left;
+}
+.blog article>div{
+	display: flex;
+    width: 100%;
+    justify-content: space-evenly;
 }
