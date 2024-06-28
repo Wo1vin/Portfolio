@@ -4864,7 +4864,7 @@ article{
     align-items: center;
 }
 article p {
-	width: 80%;
+	/* width: 80%; */
 	text-align: center;
 }
 article h2 {

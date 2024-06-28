@@ -51,10 +51,24 @@
 						<!-- Posts -->
 						<article class="blog post featured">
 							<header class="major">
+								<h2>Fetch API</h2>
+								<p>June 28th, 2024</p>
+							</header>
+							<p>The Fetch API is a more modern and powerful alternative to the XMLHttpRequest API for making HTTP requests in JavaScript. It provides a simpler and cleaner syntax, better error handling with Promises, and support for advanced features like Request and Response objects. However, the choice between the two APIs depends on the specific requirements of your project and the browsers you need to support. Here are some key differences between them.
+							</p>
+							<ol>
+								<li><strong>Promises vs Callbacks:</strong> One of the main differences is the way they handle asynchronous operations. The XMLHttpRequest API uses callbacks, which can sometimes lead to callback hell and make the code harder to read and maintain. On the other hand, the Fetch API uses Promises, which provide a more elegant and intuitive way to handle asynchronous operations. Promises allow for better error handling and chaining of multiple requests.</li>
+								<li><strong>Simplicity and Cleanliness:</strong>The Fetch API offers a simpler and cleaner API compared to the XMLHttpRequest API. It eliminates the need for complex methods like `open()` and `send()` and provides a more intuitive and declarative syntax. This makes the code easier to understand and reduces the amount of boilerplate code required.</li>
+								<li><strong>Support for Request and Response Objects:</strong>The Fetch API introduces the concepts of Request and Response objects, which provide more flexibility and control over the request and response. These objects can be easily manipulated and accessed, allowing for advanced features like caching, modifying requests and responses, and handling different types of data.</li>
+								<li><strong>Browser Support:</strong>The Fetch API is supported by most modern browsers, while the XMLHttpRequest API is supported by both modern and older browsers. However, if you need to support older browsers, you may need to use a polyfill or fallback to the XMLHttpRequest API.</li>
+							</ol>
+							<span class="tags">#API</span>
+						</article>
+						<article class="blog post featured">
+							<header class="major">
 								<h2>XMLHttpRequest API</h2>
 								<p>June 27th, 2024</p>
 							</header>
-							<h3>Host Objects</h3>
 							<p>The XMLHttpRequest API is a JavaScript API that allows web developers to send HTTP requests to a server and receive data in response without having to reload the entire page. 
 								It is commonly used in the development of dynamic web applications as a versatile tool because it allows you to interact with servers and fetch data from URLs  in the background without having to do a full page refresh. 
 								With this method, the webpage can be updated without disrupting the user experience.
